@@ -1,10 +1,10 @@
 package operations;
 
-public class Common {
+public class Post {
 	private String title;
 	private String contents;
 
-	public Common (String title, String contents) {
+	public Post (String title, String contents) {
 		this.setTitle(title);
 		this.setContents(contents);
 	}
