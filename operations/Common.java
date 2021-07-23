@@ -62,4 +62,13 @@ public class Common {
 		} while (contentes == null || contentes.length() <= 0);
 		return contentes;
 	}
+
+	public String getAnswer() {
+		String answer = null;
+		do {
+			System.out.print("y / n : ");
+			answer = console.readLine();
+		} while (!answer.equals("y") && !answer.equals("n"));
+		return answer;
+	}
 }

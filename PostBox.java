@@ -13,6 +13,7 @@ public class PostBox {
 
 		ViewAll viewAll = new ViewAll();
 		Register register = new Register();
+		Edit edit = new Edit();
 
 		int inputId = 0;
 		while (inputId != Operation.CLOSE.getOperationNum()) {
@@ -28,7 +29,9 @@ public class PostBox {
 					viewAll.viewAll();
 				} else if (inputId == Operation.REGISTER.getOperationNum()) {
 					register.register();
-				} 
+				} else if (inputId == Operation.EDIT.getOperationNum()) {
+					edit.edit();
+				}
 			} catch (NumberFormatException e) {
 				System.out.println("Elija algun numero correspondiente.");
 			}
